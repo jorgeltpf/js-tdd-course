@@ -4,6 +4,8 @@
   "description": "Nossa biblioteca do curso de JS com tdd na prática",
   "main": "index.js",
   "scripts": {
+    "lint": "./node_modules/.bin/eslint src/*.js",
+    "prepush": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -12,5 +14,11 @@
     "lib"
   ],
   "author": "Jorge Titoneli <jorgeltpf@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "husky": "^0.14.3"
+  }
 }
